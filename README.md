@@ -110,6 +110,7 @@ A interface foi projetada para ser simples e intuitiva, com:
 
 - **Limite de Participantes:** O algoritmo pode falhar se houver muitos participantes (acima de 100) devido ao limite de tentativas de embaralhamento.
 - **Compatibilidade:** Testado apenas em navegadores modernos. Pode não funcionar corretamente em versões antigas.
+- **Responsividade:** para funciona em dispositivos móveis, tablets e desktops.
 
 
 
