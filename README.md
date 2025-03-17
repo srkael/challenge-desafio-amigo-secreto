@@ -1,9 +1,10 @@
 # 🎁 Sorteio de Amigo Secreto
+
 ![layout-como-ficou.png](./assets/desafio_amigo_secreto.png)
 
 Um aplicativo web simples para realizar sorteios de **Amigo Secreto**. Ele permite adicionar participantes, sortear os pares e copiar os resultados para compartilhamento. Ideal para reuniões familiares, confraternizações entre amigos ou eventos corporativos, tudo isso com uma interface fácil e intuitiva.
 
----
+
 ## 📋 Sobre o Projeto
 
 Este sorteador de amigo secreto foi desenvolvido com JavaScript puro, HTML e CSS. E permite que você organize facilmente um sorteio para eventos entre amigos, família ou colegas de trabalho. O sistema garante que ninguém tire o próprio nome e oferece uma interface amigável para gerenciar sua lista de participantes.
@@ -18,10 +19,14 @@ Este sorteador de amigo secreto foi desenvolvido com JavaScript puro, HTML e CSS
 - 📋 Copiar resultados para área de transferência
 - 🔁 Reiniciar o sorteio para uma nova rodada
 - 🛡️ Proteção contra sorteios inválidos (onde alguém tira o próprio nome)
+
 ![layout-como-ficou.png](./assets/desafio_amigo_secreto_sorteio.png)
 
 
----
+## 🧠 Algoritmo de Sorteio
+
+O sistema utiliza o algoritmo Fisher-Yates para embaralhar a lista de participantes de forma aleatória e imparcial. A lógica foi implementada com verificações para garantir que ninguém seja sorteado para si mesmo, com um limite de tentativas para evitar loops infinitos em casos extremos.
+
 
 ## 🚀 Como Usar
 
@@ -51,7 +56,7 @@ Este sorteador de amigo secreto foi desenvolvido com JavaScript puro, HTML e CSS
    - Para reiniciar o sorteio, clique no botão **🔄 Resetar**.
    - Todos os participantes e resultados serão removidos.
 
----
+
 
 ## 🖥️ Tecnologias Utilizadas
 
@@ -60,7 +65,7 @@ Este sorteador de amigo secreto foi desenvolvido com JavaScript puro, HTML e CSS
 - **JavaScript:** Lógica do sorteio e interatividade.
 - **Algoritmo Fisher-Yates:** Embaralhamento justo dos participantes.
 
----
+
 
 ## 📂 Estrutura do Projeto
 
@@ -73,7 +78,7 @@ sorteio-amigo-secreto/
 └── README.md           # Documentação do projeto
 ```
 
----
+
 
 ## 🛠️ Como Executar Localmente
 
@@ -90,7 +95,7 @@ sorteio-amigo-secreto/
 3. Abra o arquivo `index.html` no seu navegador:
    - Clique duas vezes no arquivo ou use um servidor local (como o Live Server do VS Code).
 
----
+
 
 ## 🎨 Design e Interface
 
@@ -99,21 +104,21 @@ A interface foi projetada para ser simples e intuitiva, com:
 - Feedback visual ao copiar resultados.
 - Tabela organizada para exibir os pares sorteados.
 
----
+
 
 ## 🐛 Problemas Conhecidos
 
 - **Limite de Participantes:** O algoritmo pode falhar se houver muitos participantes (acima de 100) devido ao limite de tentativas de embaralhamento.
 - **Compatibilidade:** Testado apenas em navegadores modernos. Pode não funcionar corretamente em versões antigas.
 
----
+
 
 ## 🤝 Como Contribuir
 
 Sinta-se à vontade para contribuir com o projeto, encontrou um bug ou tem uma sugestão? Abra uma [issue](https://github.com/srkael/challenge-desafio-amigo-secreto/issues) ou envie um pull request.
 
 
----
+
 
 ## 👨‍💻 Autor
 
@@ -121,12 +126,13 @@ Sinta-se à vontade para contribuir com o projeto, encontrou um bug ou tem uma s
 - GitHub: [srkael](https://github.com/srkael)
 - Linkedin: [Rafael de Oliveira](https://www.linkedin.com/in/srkael/)
 
----
+
 
 ## 🙏 Agradecimentos
 
 - Inspirado em projetos de sorteio online.
 - Agradecimento especial à Oracle e à Alura pela oportunidade. Participar do programa ONE tem sido uma experiência incrível, repleta de aprendizado e crescimento. Também agradeço à comunidade de desenvolvedores por compartilhar conhecimento..
+
 
 ---
 
