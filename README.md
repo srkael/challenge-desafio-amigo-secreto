@@ -132,7 +132,8 @@ Sinta-se à vontade para contribuir com o projeto, encontrou um bug ou tem uma s
 ## 🙏 Agradecimentos
 
 - Inspirado em projetos de sorteio online.
-- Agradecimento especial à Oracle e à Alura pela oportunidade. Participar do programa ONE tem sido uma experiência incrível, repleta de aprendizado e crescimento. Também agradeço à comunidade de desenvolvedores por compartilhar conhecimento..
+- Agradecimento especial à Oracle e à Alura pela oportunidade. Participar do programa ONE tem sido uma experiência incrível, repleta de aprendizado e crescimento.
+- Também agradeço à comunidade de desenvolvedores por compartilhar conhecimento..
 
 
 ---
