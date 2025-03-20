@@ -6,6 +6,7 @@
     --color-button-hover: #e55720;
     --color-text: #444444;
     --color-white: #FFFFFF;
+    --font-size-base: 16px; /* Tamanho base para cálculos relativos */
 }
 
 /* Estilos gerais */
@@ -21,6 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: var(--font-size-base);
 }
 
 .main-content {
@@ -28,6 +30,8 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    max-width: 1200px; /* Limitar largura máxima para desktops */
+    margin: 0 auto; /* Centralizar o conteúdo */
 }
 
 /* Banner */
@@ -36,7 +40,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 0;
+    padding: 2rem 0 0; /* Usando rem para padding */
 }
 
 /* Seção de entrada */
@@ -48,13 +52,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem; /* 20px em rem */
     width: 100%;
 }
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
+    font-size: 3rem; /* 48px em rem */
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
@@ -63,10 +67,10 @@ body {
 
 .section-title {
     font-family: "Inter", serif;
-    font-size: 36px;
+    font-size: 2.25rem; /* 36px em rem */
     font-weight: 700;
     color: var(--color-primary);
-    margin: 10px 0;
+    margin: 0.625rem 0; /* 10px em rem */
     text-align: center;
 }
 
@@ -75,40 +79,28 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 600px;
-    margin-top: 20px;
+    max-width: 37.5rem; /* 600px em rem */
+    margin-top: 1.25rem; /* 20px em rem */
 }
 
 .input-name {
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem; /* 10px em rem */
     border: 2px solid #000;
     border-radius: 25px 0 0 25px;
-    font-size: 16px;
+    font-size: 1rem; /* 16px em rem */
 }
 
 .button-container {
-    width: 300px;
+    width: 18.75rem; /* 300px em rem */
     justify-content: center;
-}
-
-/* Estilos de entrada de texto */
-.input-title {
-    flex: 1;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 2px solid #333;
-    border-right: none;
-    border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos de botão */
 button {
-    padding: 15px 30px;
+    padding: 0.9375rem 1.875rem; /* 15px 30px em rem */
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 1rem; /* 16px em rem */
     border: 2px solid #000;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -130,31 +122,29 @@ ul {
     list-style-type: none;
     color: var(--color-text);
     font-family: "Inter", sans-serif;
-    font-size: 18px;
-    margin: 20px 0;
+    font-size: 1.125rem; /* 18px em rem */
+    margin: 1.25rem 0; /* 20px em rem */
 }
 
 .result-list {
-    margin-top: 15px;
+    margin-top: 0.9375rem; /* 15px em rem */
     color: #05DF05;
-    font-size: 22px;
+    font-size: 1.375rem; /* 22px em rem */
     font-weight: bold;
     text-align: center;
 }
 
-/* Botão de sortear título -  Fiz uns ajustes*/
+/* Botão de sortear título */
 .button-draw {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 10px 40px;
+    padding: 0.625rem 2.5rem; /* 10px 40px em rem */
     color: var(--color-white);
-    font-size: 16px;
+    font-size: 1rem; /* 16px em rem */
     background-color: rgb(231, 76, 60);
     cursor: pointer;
-    margin: 20px auto;
-    padding: 12px 20px;
-    font-size: 16px;
+    margin: 1.25rem auto; /* 20px em rem */
     font-weight: bold;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
@@ -163,21 +153,80 @@ ul {
     letter-spacing: 1px;
     border: none;
     outline: none;
-    color: white;
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 2.5rem; /* 40px em rem */
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
 
-.footer-paragrafo{
+.footer-paragrafo {
     display: flex;
     justify-content: center;
     color: aliceblue;
-    font-family:"Merriweather", serif;
-    font-size: 10px;
+    font-family: "Merriweather", serif;
+    font-size: 0.625rem; /* 10px em rem */
+}
+
+
+
+/* ajustes de queries */
+/* Breakpoints comuns */
+@media (max-width: 768px) {
+    /* Estilos para tablets e dispositivos móveis */
+    .main-title {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-name {
+        border-radius: 25px;
+        margin-bottom: 10px;
+    }
+
+    .button-add {
+        border-radius: 25px;
+    }
+
+    .button-draw {
+        width: 80%;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Estilos para dispositivos móveis pequenos */
+    .main-title {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .input-section {
+        padding: 10px;
+    }
+
+    .button-draw {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .footer-paragrafo {
+        font-size: 8px;
+    }
 }
